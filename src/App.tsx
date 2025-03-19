@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import WhoWeAre from './components/WhoWeAre';
 import Home from './components/Home';
@@ -10,7 +10,7 @@ import BookYourEvent from './components/BookYourEvent';
 
 function App() {
   return (
-    <BrowserRouter basename="/niceshodz">
+    <HashRouter>
       <div className="App">
         <Navbar />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           <Route path="/book-your-event" element={<BookYourEvent />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
