@@ -1,0 +1,38 @@
+/* Inpiration page styling*/
+.inspiration {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f7f3eb; /* Light cream background */
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    overflow: scroll;
+}
+
+.gallery {
+    column-count: 3; /* Adjust for more/less columns */
+    column-gap: 1%;
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-item {
+    width: 100%;
+    break-inside: avoid; /* Prevents images from breaking into different columns */
+    margin-bottom: 2%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.inspiration h2 {
+    font-size: 3.0rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
