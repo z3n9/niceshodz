@@ -11,7 +11,7 @@ const Navbar = () => {
                 <ul className="nav-links">
                     <li>
                     <NavLink 
-                        to="/niceshodz" 
+                        to="/#/niceshodz" 
                         end
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
@@ -20,7 +20,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink 
-                        to="/who-we-are"
+                        to="/#/who-we-are"
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
                         About Us
@@ -28,7 +28,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink 
-                        to="/what-we-do"
+                        to="/#/what-we-do"
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
                         What We Do
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink 
-                        to="/inspiration"
+                        to="/#/inspiration"
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
                         Inspiration
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink 
-                        to="/get-in-touch"
+                        to="/#/get-in-touch"
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
                         Get In Touch
@@ -52,7 +52,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink 
-                        to="/book-your-event"
+                        to="/#/book-your-event"
                         className={({ isActive }) => isActive ? 'nav-link-a' : 'nav-link'}
                     >
                         Book Your Event
