@@ -1,0 +1,62 @@
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #f5f2eb;
+}
+
+.booking-container h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100%;
+}
+
+.button-container button {
+    background-color: #333;
+    color: white;
+    margin-top: 8%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 102.2%;
+}
+
+.booking-container button:hover {
+    background-color: #555;
+}
+
+.date-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.start-date,
+.end-date {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,152 @@
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f4eb;
+    padding: 6% 8%;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0%;
+}
+
+/* Services card grid */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 3%;
+    height: 60%;
+}
+
+/* Individual service card styling */
+.service-card-wedding {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/wedding-photo.jpg);
+    background-size: cover; /* Ensures the image fully covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.service-card-sport {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/sport-photo.jpg);
+    background-size: cover; /* Ensures the image fully covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.service-card-event {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/event-photo.jpg);
+    background-size: cover; /* Ensures the image fully covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.wedding-inner-div,
+.sport-inner-div,
+.event-inner-div {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+/* Heading inside each card */
+.wedding-inner-div h3,
+.sport-inner-div h3,
+.event-inner-div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+/* Text inside each card */
+.wedding-inner-div p,
+.sport-inner-div p,
+.event-inner-div p  {
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+
+/* Call-to-action button styling */
+.wedding-inner-div button,
+.sport-inner-div button,
+.event-inner-div button {
+    background-color: transparent;
+    border: 1px solid #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.wedding-inner-div button:hover,
+.sport-inner-div button:hover,
+.event-inner-div button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #000;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
