@@ -9,15 +9,12 @@ import GetInTouch from './components/GetInTouch';
 import BookYourEvent from './components/BookYourEvent';
 
 function App() {
-    
-    const basename = process.env.NODE_ENV === 'production' ? "/niceshodz" : "";
-
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter basename=niceshodz>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/niceshodz" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/inspiration" element={<Inspiration />} />
