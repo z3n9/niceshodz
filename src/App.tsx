@@ -10,11 +10,11 @@ import BookYourEvent from './components/BookYourEvent';
 
 function App() {
   return (
-    <BrowserRouter basename="/niceshodz">
+    <BrowserRouter>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/inspiration" element={<Inspiration />} />
