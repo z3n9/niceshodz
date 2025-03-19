@@ -11,7 +11,7 @@ import BookYourEvent from './components/BookYourEvent';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" basename="/niceshodz">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
