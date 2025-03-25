@@ -49,18 +49,18 @@
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    margin-left: 1%;
+    margin-left: 0%;
     padding: 0 2%;
 }
 
 .contact-info h2 {
-    margin-top: 10%;
+    margin-top: 6%;
     font-size: 3.0rem;
 }
 
 .contact-info p {
     font-size: 1.0rem;
-    margin: 1% 0;
+    margin: 0% 0;
 }
 
 .contact-details div {

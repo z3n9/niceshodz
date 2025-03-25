@@ -5,8 +5,12 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../styling/BookYourEvent.css"
 
 interface BookingSlot {
-    start: string;
-    end: string;
+    start: Date;
+    end: Date;
+    name: string;
+    email: string;
+    phone?: string;
+    description: string;
 }
 
 const BookYourEvent = () => {
@@ -36,32 +40,37 @@ const BookYourEvent = () => {
 
         // Check if selected time is already booked
         if (bookedSlots.some(slot => 
-            (new Date(slot.start).getTime() < new Date(endDate).getTime() &&
-            new Date(slot.end).getTime() > new Date(startDate).getTime()))) {
+            (slot.start < endDate && slot.end > startDate))) {
             alert("Selected time slot is already booked. Please choose another.");
             return;
         }
 
-        const bookingData = {
-            start: startDate?.toISOString(),
-            end: endDate?.toISOString(),
+        if (endDate.getTime() <= startDate.getTime()) {
+            alert("End date and time must be after the start date and time.");
+            return;
+        }
+
+        const newBooking: BookingSlot = {
+            start: startDate,
+            end: endDate,
             description,
             name,
             email,
             phone,
         };
 
-        // Send data to backend (this should be replaced with your API)
-        const response = await fetch("/api/bookings", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(bookingData),
-        });
+        // Save booking in local state (simulating a database)
+        setBookedSlots([...bookedSlots, newBooking]);
 
-        if (response.ok) {
-            setBookedSlots([...bookedSlots, bookingData]); // Update local state
-            alert("Booking submitted! Our team will contact you shortly.");
-        }
+        alert("Your booking request has been submitted!");
+
+        // Clear form fields
+        setStartDate(null);
+        setEndDate(null);
+        setDescription("");
+        setName("");
+        setEmail("");
+        setPhone("");
     };
 
     return (
