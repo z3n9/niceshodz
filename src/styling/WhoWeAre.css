@@ -56,7 +56,7 @@
     flex-direction: column;
     align-self: flex-start;
     text-align: left;
-    overflow: visible;
+    overflow-y: scroll;
 }
 
 .justification h2 {
