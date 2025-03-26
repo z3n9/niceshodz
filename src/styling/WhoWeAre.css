@@ -5,7 +5,7 @@
     gap: 1%;
     background-color: #f5f2eb;
     height: 100%;
-    overflow: scroll;
+    overflow: visible;
 }
 
 .image1 {
@@ -57,7 +57,7 @@
     align-self: flex-start;
     text-align: left;
     height: auto;
-    overflow: scroll;
+    overflow: visible;
 }
 
 .justification h2 {
