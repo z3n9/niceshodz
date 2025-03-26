@@ -5,7 +5,7 @@
     gap: 1%;
     background-color: #f5f2eb;
     height: 100%;
-    overflow: visible;
+    overflow: scroll;
 }
 
 .image1 {
