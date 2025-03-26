@@ -56,6 +56,7 @@
     flex-direction: column;
     align-self: flex-start;
     text-align: left;
+    height: auto;
     overflow: scroll;
 }
 
